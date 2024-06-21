@@ -1,0 +1,7 @@
+{
+    "webApplicationInfo": {
+        "id": "cfdecb72-f707-4ec7-850b-4be632e5d978",
+        "resource": "growing-popular-lab.ngrok-free.app",
+        "applicationPermissions": ["User.Read"]
+    }
+}

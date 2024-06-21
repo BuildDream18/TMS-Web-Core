@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Teams App</title>
+    <script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            microsoftTeams.initialize();
+
+            microsoftTeams.authentication.getAuthToken({
+                resourceId: "growing-popular-lab.ngrok-free.app",
+                successCallback: (result) => {
+                    let accessToken = result;
+                    // Use the access token to make a request to the Graph API
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "https://graph.microsoft.com/v1.0/me", true);
+                    xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
+                    xhr.onreadystatechange = function () {
+                        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                            var user = JSON.parse(this.responseText);
+                            console.log(user);
+                        }
+                    };
+                    xhr.send();
+                },
+                failureCallback: (error) => {
+                    console.log("Error getting access token: ", error);
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

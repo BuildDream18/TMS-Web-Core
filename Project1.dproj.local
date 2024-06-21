@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/08/30 03:35:21.000.543,=C:\Users\Comet\Documents\Embarcadero\Studio\Projects\Project1.html</Transaction>
+    <Transaction>2023/08/30 03:35:23.000.337,=C:\Users\Comet\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/08/30 03:41:36.000.805,C:\Users\Comet\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\9.2023\TMS-web-core\helloworld.dfm</Transaction>
+    <Transaction>2023/08/30 03:41:36.000.805,C:\Users\Comet\Documents\Embarcadero\Studio\Projects\Unit1.html=D:\9.2023\TMS-web-core\helloworld.html</Transaction>
+    <Transaction>2023/08/30 03:41:36.000.805,C:\Users\Comet\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\9.2023\TMS-web-core\helloworld.pas</Transaction>
+    <Transaction>2023/08/30 19:52:57.000.529,C:\Users\Comet\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\9.2023\TMS-web-core\Project1.dproj</Transaction>
+  </Transactions>  <BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
